@@ -4,7 +4,7 @@ total_score = 0
 answer_map = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
 
 def load_questions(filename):
-    with open(filename) as f:
+    with open(filename, encoding='utf-8') as f:
         q = eval(f.read())
     return q
 
