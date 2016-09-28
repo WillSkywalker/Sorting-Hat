@@ -16,16 +16,14 @@ def play_hedwig_theme():
                     channels=wf.getnchannels(),
                     rate=wf.getframerate(),
                     output=True)
+    while True:
 
-    data = wf.readframes(1024)
-
-    while data != '':
-        stream.write(data)
+        wf.setpos(0)
         data = wf.readframes(1024)
-    stream.stop_stream()
-    stream.close()
 
-    p.terminate()
+        while data:
+            stream.write(data)
+            data = wf.readframes(1024)
 
 
 class SortingHatGUI(tk.Tk):
