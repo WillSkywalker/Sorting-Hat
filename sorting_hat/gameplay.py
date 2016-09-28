@@ -1,37 +1,35 @@
 #!/usr/bin/env python3
 
-from hat import load_questions, ask_question, IllegalAnswerError
+from hat import Hat, IllegalAnswerError
 from sys import exit
 
 questions_filename = '../data/questions.json'
 
+def print_question(q):
+    print(q['question'])
+    for answer in q['answers']:
+        print(answer)
+
 def play():
-    total_score = 0
     num = input('请输入你能接受的最大题数：')
     try:
-        questions = load_questions(questions_filename, int(num))
+        your_hat = Hat(questions_filename, int(num))
     except ValueError:
         print('输入的不是合法数字！')
         exit()
 
-    for question in questions:
+    q = your_hat.ask_question()
+    while q:
         while True:
             try:
-                score = ask_question(question)
+                print_question(q)
+                your_hat.answer_question(input())
                 break
             except IllegalAnswerError:
                 print('没有这个选项吧...\n')
-        total_score += score
+        q = your_hat.ask_question()
 
-    length = len(questions)
-    if length <= total_score <= length * 2:
-        print('格兰芬多!')
-    elif length * 2 < total_score <= length * 2.5:
-        print('赫奇帕奇!')
-    elif length * 2.5 < total_score <= length * 3:
-        print('拉文克劳!')
-    elif total_score > length * 3:
-        print('斯莱特林!')
+    print(your_hat.calculate_house())
 
 
 if __name__ == '__main__':
