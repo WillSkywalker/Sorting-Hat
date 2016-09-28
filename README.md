@@ -17,4 +17,4 @@ The Sorting Hat from Harry Potter. For training purposes.
 
 * * *
 
-如果您在学习中遇到任何问题，欢迎联系本教程的作者 (Will Skywalker)[https://willskywalker.com].
+如果您在学习中遇到任何问题，欢迎联系本教程的作者 [Will Skywalker](https://willskywalker.com).
