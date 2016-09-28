@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# CTags files
+.tags
+.tags_sorted_by_file
+
+# My virtual environment
+hatvenv/
