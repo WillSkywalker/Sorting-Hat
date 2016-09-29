@@ -15,6 +15,8 @@ The Sorting Hat from Harry Potter. For training purposes.
 * unit7: 面向对象的设计；软件架构
 * unit8: 图形界面；线程
 
+您可以使用 `git checkout unit[1-8]` 来管理进度。例如，如果要查看第一单元的内容，可以在终端中输入 `git checkout unit1`.
+
 * * *
 
 如果您在学习中遇到任何问题，欢迎联系本教程的作者 [Will Skywalker](https://willskywalker.com).
