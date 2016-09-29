@@ -9,7 +9,7 @@ The Sorting Hat from Harry Potter. For training purposes.
 * unit1: 基本的输入/输出；`if` 控制流
 * unit2: 函数定义；运算符；`for`循环
 * unit3: 数据结构: 列表与字典
-* unit4: 读取文件；列表映射，索引值
+* unit4: 读取文件；字典映射，索引值
 * unit5: 使用 `import`；读取 JSON；列表/字典解析
 * unit6: 模块管理；处理异常，自定义异常
 * unit7: 面向对象的设计；软件架构
