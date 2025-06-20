@@ -1,22 +1,23 @@
 # Sorting-Hat
-The Sorting Hat from Harry Potter. For training purposes.
+The Sorting Hat from Harry Potter. For Python training purposes.
 
 * * *
 
-这是为[山东大学学生在线](https://www.online.sdu.edu.cn/online2016)试用期培训而设计的项目。全部内容共分为八次课，目的是让对编程不熟悉的人快速上手 Python。
+This is a training project designed for students with no programming background. We designed the content that gives you a thorough introduction to Python in eight lessons.
 
-项目按照可能的教学进度分为 8 个单元。
-* unit1: 基本的输入/输出；`if` 控制流
-* unit2: 函数定义；运算符；`for`循环
-* unit3: 数据结构: 列表与字典
-* unit4: 读取文件；字典映射，索引值
-* unit5: 使用 `import`；读取 JSON；列表/字典解析
-* unit6: 模块管理；处理异常，自定义异常
-* unit7: 面向对象的设计；软件架构
-* unit8: 图形界面；线程
+The project is divided into 8 units:
 
-您可以使用 `git checkout unit[1-8]` 来管理进度。例如，如果要查看第一单元的内容，可以在终端中输入 `git checkout unit1`.
+* unit1: Basic input/output; using `if`
+* unit2: Define a function; Operators; `for` loops
+* unit3: Data structures: `list` and `dict`
+* unit4: Reading a file; indexing and mapping
+* unit5: Using `import` for third part packages; loading JSON; list comprehension
+* unit6: Package management; Exceptions
+* unit7: Object-oriented programming; project structure
+* unit8: GUI in Tkinter; threads
+
+You may use `git checkout unit[1-8]` to choose a unit. For example, if you are teaching or learning from unit one, please type `git checkout unit1` in your terminal and press Enter.
 
 * * *
 
-如果您在学习中遇到任何问题，欢迎联系本教程的作者 [Will Skywalker](https://willskywalker.com).
+Please contact [Will Skywalker](https://willskywalker.com) for any questions or issues related to this project.
