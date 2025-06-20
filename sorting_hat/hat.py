@@ -41,12 +41,12 @@ class Hat:
 
     def calculate_house(self):
         if self.length <= self.score <= self.length * 2:
-            return '格兰芬多!'
+            return 'Gryffindor!'
         elif self.length * 2 < self.score <= self.length * 2.5:
-            return '赫奇帕奇!'
+            return 'Hufflepuff!'
         elif self.length * 2.5 < self.score <= self.length * 3:
-            return '拉文克劳!'
+            return 'Ravenclaw!'
         elif self.score > self.length * 3:
-            return '斯莱特林!'
+            return 'Slytherin!'
 
         
